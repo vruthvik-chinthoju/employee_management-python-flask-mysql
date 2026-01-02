@@ -56,37 +56,40 @@ The project can be easily extended to support databases such as SQLite, MySQL, o
 
 ## Project Structure 
 
-Flask-Manager-Application/
+Employee-Management-Flask-Application/
 │
-├── main.py                 # Application entry point
-├── models.py               # Data models / business logic
-├── requirements.txt        # Project dependencies
-├── README.md               # Project documentation
+├── .venv/ # Virtual environment
+├── pycache/ # Python cache files
 │
-├── templates/              # HTML templates (Jinja2)
-│   ├── index.html
-│   ├── about.html
-│   └── layout.html
+├── main.py # Application entry point
+├── models.py # Database models / business logic
+├── requirements.txt # Project dependencies
+├── README.md # Project documentation
+├── .gitignore # Git ignore file
 │
-├── static/                 # Static files
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── script.js
-│   └── images/
+├── templates/ # HTML templates (Jinja2)
+│ ├── emp.html
+│ ├── login.html
+│ └── register.html
 │
-└── .gitignore              # Git ignore file
-
-
----
+├── static/ # Static assets
+│ ├── css/
+│ │ └── style.css
+│ ├── js/
+│ │ └── script.js
+│ ├── images/
+│ ├── favicon.png
+│ └── download.jpg
+│
+└── downloads/ # Optional downloaded files
 
 ## How to Run This Project
 
-### 1. Clone the Repository
+1. Clone the Repository
 git clone https://github.com/vruthvik-chinthoju/employee_management-python-flask-mysql
 
 2. Navigate to This Folder
- cd employee_management
+cd employee_management
 
 3. Create a Virtual Environment
 python -m venv venv
@@ -98,16 +101,14 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 6.Run these Commands
-set FLASK_APP = main.py
-set FLASK_DEBUG = 1
-flask run
+ 1.set FLASK_APP = main.py
+ 2.set FLASK_DEBUG = 1
+ 3.flask run
 
 7. Open in Browser
 http://127.0.0.1:5000
 
-
-
-
+---
 ## Methods / Approach
 - Backend routing and request handling using Flask
 - Modular Python files for maintainability
