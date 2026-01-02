@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import LoginManager,login_user,login_required,logout_user,current_user
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqlconnector://root:root@localhost/project1"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///employee.db"
 app.secret_key="secret"
 
 login_manager = LoginManager(app)
