@@ -86,20 +86,14 @@ Employee-Management-Flask-Application/
 │
 └── downloads/              # Optional downloaded files
 ```
-
-
-## How to Run This Project
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/vruthvik-chinthoju/employee_management-python-flask-mysql.git
+---
 
 ## How to Run This Project
 
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/vruthvik-chinthoju/employee_management-python-flask-mysql.git
-
+```
 2. Navigate to the Project Folder
 cd employee_management-python-flask-mysql
 
@@ -126,8 +120,10 @@ export FLASK_DEBUG=1
 flask run
 
 7. Open in Browser
+```
 http://127.0.0.1:5000
 ```
+
 ---
 ## Methods / Approach
 - Backend routing and request handling using Flask
