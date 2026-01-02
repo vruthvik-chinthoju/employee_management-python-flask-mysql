@@ -95,32 +95,43 @@ Employee-Management-Flask-Application/
 git clone https://github.com/vruthvik-chinthoju/employee_management-python-flask-mysql.git
 ```
 2. Navigate to the Project Folder
+```
 cd employee_management-python-flask-mysql
+```
 
 3. Create a Virtual Environment
+```
 python -m venv venv
+```
 
-5. Activate the Virtual Environment
--Windows
--venv\Scripts\activate
-
--Mac / Linux
--source venv/bin/activate
+4. Activate the Virtual Environment
+Windows
+```
+venv\Scripts\activate
+```
+Mac / Linux
+```
+source venv/bin/activate
+```
 
 5. Install Dependencies
+```
 -pip install -r requirements.txt
+```
 
-7. Run the Application
--Windows
--set FLASK_APP=main.py
--set FLASK_DEBUG=1
--flask run
-
--Mac / Linux
--export FLASK_APP=main.py
--export FLASK_DEBUG=1
--flask run
-
+6. Run the Application
+Windows
+```
+set FLASK_APP=main.py
+set FLASK_DEBUG=1
+flask run
+```
+Mac / Linux
+```
+export FLASK_APP=main.py
+export FLASK_DEBUG=1
+flask run
+```
 7. Open in Browser
 ```
 http://127.0.0.1:5000
