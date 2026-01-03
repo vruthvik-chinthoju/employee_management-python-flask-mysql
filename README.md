@@ -24,6 +24,7 @@ This project addresses that gap by implementing a complete backend workflow — 
 - [Database](#database)
 - [Tools and Technologies](#tools-and-technologies)
 - [Project Structure](#project-structure)
+- [Documentation & System Design](#documentation-&-system-design)
 - [Methods / Approach](#methods--approach)
 - [Key Insights](#key-insights)
 - [Key Features](#key-features)
@@ -167,6 +168,31 @@ http://127.0.0.1:5000
 ```
 
 ---
+## 📘 Documentation & System Design
+
+This project follows a **documentation-first approach** to ensure clarity,
+maintainability, and scalability.
+
+### Included Documentation
+- **Doxygen-based developer documentation**
+- **Sequence Call Flow Diagrams** (Login & request lifecycle)
+- **System Architecture Diagram** (Client–Server model)
+
+All documentation sources are maintained under the `/docs` directory:
+```
+/docs
+├── Doxyfile
+└── diagrams
+    ├── login_sequence.svg
+    └── architecture_diagram.svg
+```
+To generate the documentation locally:
+```bash
+doxygen docs/Doxyfile
+```
+
+---
+
 ## Methods / Approach
 - Backend routing and request handling using Flask
 - Modular Python files for maintainability
