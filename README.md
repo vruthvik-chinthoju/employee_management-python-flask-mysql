@@ -168,7 +168,7 @@ http://127.0.0.1:5000
 ```
 
 ---
-## 📘 Documentation & System Design
+## Documentation and System Design
 
 This project follows a **documentation-first approach** to ensure clarity,
 maintainability, and scalability.
@@ -304,6 +304,6 @@ Production-ready configuration
 **Name:** Chinthoju Vruthvik  
 **Contact:** 8919721525  
 **LinkedIn:** [Chinthoju Vruthvik](https://www.linkedin.com/in/chinthoju-vruthvik-83754b320)
-**GitHub:[Chitnhoju Vruthvik](https://github.com/vruthvik-chinthoju)
+**GitHub:** [Chitnhoju Vruthvik](https://github.com/vruthvik-chinthoju)
 
 ---
