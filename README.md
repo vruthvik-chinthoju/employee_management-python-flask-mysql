@@ -253,13 +253,13 @@ Production-ready configuration
 ## Screenshots
 
 ### Login Page
-![Login Page](screenshots/login.png)
+![Login Page](screenshots/Login.png)
 
 ### Register Page
-![Register Page](screenshots/register.png)
+![Register Page](screenshots/Register.png)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
 
 ### Mobile View
 ![Mobile View](screenshots/mobile-view.png)
