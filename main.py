@@ -2,10 +2,18 @@ from flask import Flask,render_template,request,url_for,flash,redirect
 from models import Manager,db,Employee
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import LoginManager,login_user,login_required,logout_user,current_user
+import os
+from datetime import timedelta
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///employee.db"
-app.secret_key="secret"
+app.secret_key = os.getenv("SECRET_KEY")
+app.config.update(
+    PERMANENT_SESSION_LIFETIME=timedelta(days=1),
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Lax"
+)
+
 
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
@@ -47,7 +55,7 @@ def login():
             flash("Email not Found")
             return redirect(url_for('login'))
         if  check_password_hash(user.password,password):
-                login_user(user)
+                login_user(user,remember=True)
                 return redirect(url_for('emp'))
         else:
                 flash("You Have Entered Incorrect Password")
